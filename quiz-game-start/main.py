@@ -1,5 +1,5 @@
 # JAI SHREE RAM 
-
+#RULES:This is quiz game you will get +1 points for correct answer and -1 points worng answer respectively 
 # importing file 
 from question_model import Question
 from data import question_data
