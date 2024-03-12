@@ -22,7 +22,6 @@ def  RAM():
     time.sleep(2)
     t.clear()
 
-
 def forword():
     # segments[0].forward(20)
     if segments[0].heading() != 270:
@@ -73,11 +72,7 @@ def movement():
     segments[0].forward(20)
 
     move()
-    
-      
-
-
-          
+        
 game_on=True
 while(game_on):
     t.update()
@@ -96,30 +91,5 @@ while(game_on):
         elif segment.distance(segments[0]) < 10:
             game_on = False
             scoreboard.game_over()
-
-    
-         
-       
-        
-    
-        
-        
-        
-    
-        
-
-     
-    
-    
-
-
-    
-
-
-    
-
-
-
-
 
 t.exitonclick()
