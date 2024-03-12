@@ -6,7 +6,7 @@ import turtle as  t
 import time 
 import random 
 
-
+# import the Food class and Scoreboard class
 from food import Food
 from scoreboard import Scoreboard
 ALIGNMENT = "center"
