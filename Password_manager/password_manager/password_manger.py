@@ -1,4 +1,5 @@
 # JAI SHREE RAM 
+# ------------------Importing module -----------------------------------------------------------------
 from tkinter import *
 from pandas import *
 from tkinter import ttk, messagebox
@@ -7,7 +8,7 @@ import json
 from genrate_password import password_gen 
 
 
-#Search the data 
+#------------------Search the data -------------------------------------------------
 def search():
    
     website=data_to_be_checked()
@@ -32,7 +33,7 @@ def search():
     
 
 
-# data to be checked
+# --------------------------------------data to be checked-------------------------------------------------
 def data_to_be_checked():
     data=website_entry.get()
     return data
@@ -47,14 +48,17 @@ def check_details():
             if data_to_be_checked() in content:
                 messagebox.showinfo(message="website user data is already avaliable please check the file\n",title="Check")
         
-#  Password genrate from other file  
+# ---------------------------- Password genrate from other file(from password genrater module) ---------------------------------------------------- 
 def password_genrate():
     password = password_gen()
     password_entry.delete(0, END)
     password_entry.insert(0, password)
 
 # Save Password in txt or xls or Json
+# User can choose any file like Text , Excel, Json 
+# I recommend to choose Json file for more useful 
 
+# -----------------------------------------Data logging for the Json file ---------------------------------------------------
 def data_logging_json():
     website=website_entry.get()
     email=Email_enrty.get()
@@ -97,7 +101,7 @@ def data_logging_json():
 
                 
                      
-
+# ----------------------------------------------Data loggong for text file-------------------------------------------
 def data_logging():
     
     website=website_entry.get()
