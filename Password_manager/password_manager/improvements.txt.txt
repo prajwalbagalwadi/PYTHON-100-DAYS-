@@ -1,0 +1,6 @@
+JAI SHREE RAM 
+1] logging to excel file for more user frindely 
+2] make GUI  more attractive and Good looking 
+3] convert in to .exe file for easy installtion 
+4]
+ 	
