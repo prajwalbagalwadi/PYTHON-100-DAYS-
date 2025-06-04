@@ -36,8 +36,7 @@ def check_for_BD():
     for index, row in data.iterrows():
         if int(row['day']) == td and int(row['month']) == tm:
             # print(f"HBD {row['name']}! Email: {row['email']}")
-            em=row['email']
-            print(em)          
+            em=row['email']         
          
             with open("SMTP/letter_1.txt",'r') as letter1:
                 read=letter1.read()
